@@ -3,11 +3,11 @@ import numpy as np
 from tensorflow import keras
 
 
-incomingData = cv2.VideoCapture('rtsp://localhost/live', cv2.CAP_FFMPEG)
+incomingData = cv2.VideoCapture('rtsp://localhost:555/live', cv2.CAP_FFMPEG)
 
-lowerGold = np.array([82, 137, 153], dtype = "uint8") 
+upperGold = np.array([134, 210, 231], dtype = "uint8") 
 
-upperGold = np.array([123, 205, 229], dtype = "uint8") 
+lowerGold = np.array([99, 193, 219], dtype = "uint8") 
 
 while True:
 
